@@ -16,6 +16,10 @@ module.exports = {
     path: path.join(__dirname, '../build'),
     filename: 'js/[name].js',
   },
+
+  externals: {
+    'jquery': '{default: window.jQuery}'
+  },
   
   module: {
     rules: [
@@ -54,7 +58,7 @@ module.exports = {
                 mangle: {
                     properties: {
                         keep_quoted: true,
-                        // debug: true,
+                        debug: true,
                     },                       
                 },
             }

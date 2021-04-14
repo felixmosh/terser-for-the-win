@@ -1,6 +1,8 @@
+import $ from 'jquery'
 
 export class App {
   init () {
+    console.log($);
     const jTitle = $('title').first();
     console.log('extrected with jQuery: ', jTitle.text().trim());
     setTimeout(() => {

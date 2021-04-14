@@ -1,5 +1,4 @@
 
-import { ScriptLoader } from './script-loader';
 import { App } from './app';
 
 window.APP_SCOPE = {
@@ -8,4 +7,4 @@ window.APP_SCOPE = {
   }
 }
 
-ScriptLoader.loadjQuery();
+window.APP_SCOPE.init();
